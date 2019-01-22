@@ -4,7 +4,7 @@ var models = require('../models');
 var passport = require('passport');
 
 router.get('/', (req, res) => {
-    /*
+  /*
     // find movies where title includes content of title parameter (and include its actors)
     models.Movie.findAll({ 
        where: { 
@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
             }
         ] 
     })
-    */
+   */
 
     // get all movies with its actors
     models.Movie.findAll({

@@ -25,7 +25,7 @@ module.exports = (passport, user) => {
             });
         }
     ));
-
+  //Comprobar json token
     var opts = {}
     opts.jwtFromRequest = ExtractJWT.fromAuthHeaderAsBearerToken();
     opts.secretOrKey = 'sp@c3f1t';
@@ -40,7 +40,7 @@ module.exports = (passport, user) => {
             }
         })
     }));
-
+   //REGISTRO
     passport.use('local-signup', new LocalStrategy(
         {
             usernameField: 'email',

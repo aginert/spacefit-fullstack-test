@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "init": "npm install && node_modules/.bin/sequelize db:migrate && node_modules/.bin/sequelize db:seed:all",
-    "start": "PORT=4000 node ./bin/www"
+    "start": "PORT=4000 nodemon  ./bin/www"
   },
   "dependencies": {
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-session": "^1.15.6",

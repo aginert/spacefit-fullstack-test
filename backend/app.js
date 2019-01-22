@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sequelize = require('sequelize');
-
+var cors = require('cors');
 var models = require('./models');
 
 var indexRouter = require('./routes/index');
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
-
+app.use(cors());
 app.use(sequelize);
 
 app.use(logger('dev'));
@@ -31,10 +31,10 @@ app.use(logger('dev'));
 require('./config/passport')(passport, models.User);
 
 // Routing
-  // Public route
+// Public route
 app.use('/', indexRouter);
 
-  // Protected route (login required)
+// Protected route (login required)
 app.use('/movies', passport.authenticate('jwt', { session: false }), moviesRouter);
 app.use('/actors', passport.authenticate('jwt', { session: false }), actorsRouter);
 

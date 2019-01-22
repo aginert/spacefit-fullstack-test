@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# Personal
+Apuntes.txt
+
+.idea/
+
+package-lock.json
+
+frontend/package-lock.json
