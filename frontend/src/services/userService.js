@@ -3,6 +3,7 @@ import GlobalData from './globalData';
 
 class UserService {
     constructor() {
+        this.endPointMovies = `${GlobalData.base_endpoint}`;
         this.endPointLogin = `${GlobalData.base_endpoint}/login`;
         this.endPointRegister = `${GlobalData.base_endpoint}/register`;
     }
@@ -12,6 +13,9 @@ class UserService {
             return result;
         } catch (error) {
             console.error(error);
+            return {
+                error:true,
+            }
         }
     }
     async registerUser(user){

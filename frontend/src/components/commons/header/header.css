@@ -1,0 +1,26 @@
+.navbarColor{
+    background-color: rgba(0, 0, 0, 0.33);
+}
+.navbar-light .navbar-toggler{
+    background-color: white;
+}
+
+.logo{
+    height: 6vh;
+    width: 18vh;
+}
+
+a:hover {
+    background-color: #B9090B;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.nav-item{
+    margin-left: 2vh;
+
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #ffffff;
+}

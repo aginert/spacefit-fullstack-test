@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import './footer.css';
 
 class Footer extends Component{
     render(){
         return(
-            <nav className="navbar navbar-expand-lg ">
-                <h1 className="App-title"> Mi Footer</h1>
-            </nav>
+
+                <div className="footer">
+                    <p>Spacefilm, <strong>for you</strong>.</p>
+                </div>
+
 
         )
 

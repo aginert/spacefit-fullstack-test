@@ -1,4 +1,4 @@
-export const loginUser = (data)=>{
+/*export const loginUser = (data)=>{
     return {
         type: 'LOGIN_USER',
         token: data.data.data
@@ -10,7 +10,7 @@ export const registerUser = (data)=>{
         type: 'REGISTER_USER',
         data: data.data.data
     }
-}
+}*/
 
 /*export const logoutUser=()=> {
     return {

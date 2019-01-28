@@ -8,10 +8,11 @@ import './index.css';
 
 //Containers
 import App from './container/App';
-import './container/login';
+import './components/login';
 import Error_404 from './components/commons/error404';
-import Login from './container/login';
-import Register from './container/register';
+import Login from './components/login';
+import Register from './components/register';
+import UserHome from './container/userHome';
 
 //Redux
 import  {createStore} from 'redux';
@@ -41,6 +42,7 @@ const Routes=(
                 <Route path="/" component={App} exact />
                 <Route path="/login" component={Login} exact/>
                 <Route path="/register" component={Register} exact/>
+                <Route path="/user/home" component={UserHome}/>
                 <Route parth='*' component={Error_404}/>
             </Switch>
             <Footer/>

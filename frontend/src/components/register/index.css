@@ -1,0 +1,36 @@
+
+.App-header {
+    background-color: rgba(40, 44, 52, 0.8);
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.send-button{
+    background: #54C7C3;
+    width:100%;
+    font-weight: 600;
+    color:#fff;
+    padding: 8px 25px;
+}
+
+.header-title{
+    margin: 2rem 0;;
+}
+.titleLogin{
+
+}
+h1{
+    font-size: 31px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #dbe8ec;
+}
+h2{
+    color: #91bdd0;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+}

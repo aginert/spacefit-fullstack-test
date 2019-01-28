@@ -1,0 +1,66 @@
+.imgPosterUsers{
+    background-image: url(/images/general/redCinema1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100vm ;
+    text-align: center;
+
+}
+
+.listMovies{
+    margin-top: 40vh;
+}
+.bg-gardientBlack{
+    background: -webkit-linear-gradient(90deg,transparent 1em, black 70%, transparent 100%);
+    background: -moz-linear-gradient(90deg,transparent 1em, black 70%, transparent 100%);
+    background: -ms-linear-gradient(90deg,transparent 1em, black 70%, transparent 100%);
+    background: -o-linear-gradient(90deg, transparent 1em,black 70%, transparent 100%);
+    background: linear-gradient(90deg,transparent 1em,black 70%, transparent 100%);
+}
+.table-movie{
+    margin-left: 40px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.table td, .table-dark thead th{
+    border-color: transparent;
+}
+
+.img-movie{
+    width: 10vmax;
+    padding: 10px;
+}
+
+.iconSize{
+    height: 3vh;
+    width: 3vh;
+}
+.iconInfo{
+    border-color: black;
+}
+.iconMargin{
+   margin-top: 5px;
+}
+
+.magicTitle {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+

@@ -1,13 +1,13 @@
-const mapStateToProps = function(state){
+
+/*const mapStateToProps = function(state){
     return {
         is_login: state.is_login,
     }
-}
+}*/
 const userReducer = (state={is_login:false}, action)=>{
 
     switch(action.type){
         case 'LOGIN_USER':
-            console.log(action);
             return {token: action.token,is_login: true}
 
         case 'REGISTER_USER':
@@ -20,4 +20,4 @@ const userReducer = (state={is_login:false}, action)=>{
     }
 }
 
-export default puserReducer;
+export default userReducer;
