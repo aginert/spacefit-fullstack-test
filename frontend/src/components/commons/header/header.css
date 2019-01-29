@@ -2,7 +2,7 @@
     background-color: rgba(0, 0, 0, 0.33);
 }
 .navbar-light .navbar-toggler{
-    background-color: white;
+    background-color: #6f6f6f;
 }
 
 .logo{
@@ -11,7 +11,7 @@
 }
 
 a:hover {
-    background-color: #B9090B;
+    background-color: #8f090b;
     color: #000000;
     border-radius: 5px;
     font-weight: bold;

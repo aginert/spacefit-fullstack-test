@@ -14,10 +14,10 @@ class Header extends Component{
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"/>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse ml-5" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link ml-5" href="#userHome"> Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="#userHome"> Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#userHome"> Movies <span className="sr-only">(current)</span></a>
