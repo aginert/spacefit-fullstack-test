@@ -11,6 +11,7 @@ class SearchBy extends Component{
         this.setState({
             query: this.search.value
         })
+        console.log(this.search.value);
     };
     render(){
         return(

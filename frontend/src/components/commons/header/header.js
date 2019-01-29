@@ -7,7 +7,7 @@ class Header extends Component{
         return(
             <div className="Header-poster">
             <nav className="navbar navbar-expand-lg navbarColor navbar-light ">
-                    <img className="logo" src={"/images/general/logoA.png"}/>
+                    <img className="logo" src={"/images/general/logoA.png"} alt="Spacefilm"/>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -17,10 +17,10 @@ class Header extends Component{
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
-                            <a className="nav-link ml-5" href="#"> Home <span className="sr-only">(current)</span></a>
+                            <a className="nav-link ml-5" href="#userHome"> Home <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"> Movies <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="#userHome"> Movies <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/login">Login</a>

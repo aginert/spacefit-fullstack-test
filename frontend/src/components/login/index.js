@@ -20,7 +20,7 @@ class Login extends Component{
          const UserService = new userService();
          let result = await UserService.loginUser(Data);
 
-         if (result.error == true) {
+         if (result.error === true) {
              this.setState({error: true})
          }else{
              localStorage.setItem ('token', result.data.data.token);

@@ -29,7 +29,7 @@ router.get('/search', (req, res) => {
         where: {
             title: {
                 $like: '%' + req.query.title + '%'
-            }
+            },
         },
         include: [
             {
