@@ -16,9 +16,11 @@ class Login extends Component{
          const Data={
              email,
              password
-         }
+         };
          const UserService = new userService();
          let result = await UserService.loginUser(Data);
+
+
 
          if (result.error === true) {
              this.setState({error: true})
@@ -30,7 +32,7 @@ class Login extends Component{
      };
     getErrors(){
         return (this.state.error) ? <h2>El usuario o la contraseña no son correctos. Intentalo de nuevo.</h2>:'';
-    }
+    };
 
     render(){
 

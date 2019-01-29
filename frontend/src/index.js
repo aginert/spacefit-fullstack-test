@@ -29,7 +29,6 @@ import * as serviceWorker from './serviceWorker';
 
 const Store = createStore(userReducer);
 
-console.log(Store.getState());
 
 
 const Routes=(

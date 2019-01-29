@@ -9,7 +9,6 @@ class UserHome extends Component {
         this.state = {
             movies: [],
         };
-        console.log(this.state);
     }
 
 
@@ -34,6 +33,7 @@ class UserHome extends Component {
     };
 
 
+
     render() {
         return (
             <div className='App-userHome' id="#userHome">
@@ -49,6 +49,7 @@ class UserHome extends Component {
                     </div>
                         {/*   Search Button for  Screen size sm and xs  */}
                         <div className="col-sm-1 col-md-2 col-lg-2  d-block d-none d-sm-block d-md-none" id="collapseMovie">
+
                             <div className="float-right">
                                 <div className="btn-group dropright">
                                     <button type="button" className="btn btn-secondary dropdown-toggle iconMargin mt-5 buttonTransparent"
@@ -57,7 +58,7 @@ class UserHome extends Component {
                                              alt="buscar"/>
                                     </button>
 
-                                    <div className="dropdown-menu bg-gardientBlack">
+                                    <div className="dropdown-menu bg-black">
                                         <form className="m-3" onSubmit={this.searchByName}>
                                             <input placeholder="Search by Title..."
                                                    ref={input => this.search = input}/>
@@ -113,7 +114,7 @@ class UserHome extends Component {
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td className="align-middle">
+                                            <td className="align-middle" id={movie.Genres[0].name}>
                                                 {movie.Genres[0].name}
                                             </td>
                                             <td className="align-middle text-center">
@@ -138,7 +139,7 @@ class UserHome extends Component {
                                         <img className="iconSize iconInfo" src={"/images/icons/magnifier.png"}
                                              alt="buscar"/>
                                     </button>
-                                    <div className="dropdown-menu bg-gardientBlack">
+                                    <div className="dropdown-menu bg-black" id="myGenres">
                                         <form className="m-3" onSubmit={this.searchByName}>
                                             <input placeholder="Search by Title..."
                                                    ref={input => this.search = input}/>
